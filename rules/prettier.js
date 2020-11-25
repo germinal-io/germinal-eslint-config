@@ -1,7 +1,7 @@
 const { error, off } = require("./_rule");
 
 module.exports = {
-    plugins: ["prettier", "prettier-plugin-organize-imports"],
+    plugins: ["prettier"],
     rules: {
         "prettier/prettier": [
             error,
