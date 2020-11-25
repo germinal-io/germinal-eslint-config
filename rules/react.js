@@ -52,6 +52,7 @@ module.exports = {
             "error",
             {
                 allowArrowFunctions: true,
+                allowFunctions: true,
                 allowBind: false,
                 ignoreRefs: true,
             },
