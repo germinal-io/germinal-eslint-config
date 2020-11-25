@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json.schemastore.org/package",
+    "name": "germinal-eslint-config",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@gitlab.com:germinal/germinal-eslint-config.git",
+    "author": "Lucien Boudy <luboudy@gmail.com>",
+    "license": "MIT",
+    "files": [
+        "*.js",
+        "rules/*.js"
+    ],
+    "scripts": {
+        "format": "eslint . --ext .js --fix",
+        "lint": "eslint . --ext .js",
+        "upgrade:deps": "ncu -u",
+        "validate": "yarn lint"
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+            "pre-push": "yarn validate",
+            "post-rewrite": "yarn install",
+            "post-merge": "yarn install"
+        }
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "4.8.2",
+        "eslint-config-prettier": "6.15.0",
+        "eslint-plugin-filenames": "1.3.2",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-jest": "24.1.3",
+        "eslint-plugin-jsdoc": "30.7.8",
+        "eslint-plugin-json-format": "2.0.1",
+        "eslint-plugin-prettier": "3.1.4",
+        "eslint-plugin-promise": "4.2.1",
+        "eslint-plugin-react": "7.21.5",
+        "eslint-plugin-react-hooks": "4.2.0",
+        "eslint-plugin-unicorn": "23.0.0",
+        "prettier-plugin-organize-imports": "1.1.1"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^11.0.0",
+        "@commitlint/config-conventional": "^11.0.0",
+        "@types/eslint": "7.2.5",
+        "@types/eslint-plugin-prettier": "3.1.0",
+        "@types/prettier": "2.1.5",
+        "@types/react": "17.0.0",
+        "@typescript-eslint/parser": "4.8.2",
+        "babel-eslint": "10.1.0",
+        "eslint": "7.14.0",
+        "eslint-config-prettier": "6.15.0",
+        "eslint-index": "1.5.0",
+        "eslint-plugin-node": "11.1.0",
+        "eslint-plugin-sort-keys-fix": "1.1.1",
+        "husky": "^4.3.0",
+        "npm-check-updates": "^10.2.2",
+        "prettier": "2.2.0",
+        "react": "17.0.1",
+        "typescript": "^4.1.2"
+    },
+    "peerDependencies": {
+        "@typescript-eslint/parser": "4.x",
+        "babel-eslint": "10.x",
+        "eslint": "7.x",
+        "prettier": "2.x"
+    }
+}

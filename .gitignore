@@ -1,0 +1,23 @@
+# OS specific rules
+.DS_Store
+
+# Package manager
+node_modules
+lerna-debug.log
+yarn-error.log
+
+# build
+dist
+build
+
+# no npm, only yarn
+package-lock.json
+packages/**/package-lock.json
+
+# cache
+.eslintcache
+.cache
+.parcel-cache
+
+### WebStorm ###
+.idea
