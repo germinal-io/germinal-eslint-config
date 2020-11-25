@@ -1,6 +1,6 @@
 {
     "$schema": "http://json.schemastore.org/package",
-    "name": "germinal-eslint-config",
+    "name": "@germinal/eslint-config",
     "version": "1.0.0",
     "main": "index.js",
     "repository": "git@gitlab.com:germinal/germinal-eslint-config.git",
