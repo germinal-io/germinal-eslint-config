@@ -1,6 +1,6 @@
 # Germinal ESLint configuration _(@germinal-io/eslint-config)_
 
-> ESLint configuration presets
+> ESLint configuration presets (no semicolon)
 
 ## Installation
 
@@ -22,6 +22,7 @@ edit `eslintrc.json` and add default configuration
 
 **Features :**
 
+- No semicolon !
 - `ES` and `TS` validation
 - `Prettier` formatting
 - `JSX` and `React` syntax validation
