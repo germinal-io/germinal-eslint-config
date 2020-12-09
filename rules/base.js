@@ -212,7 +212,6 @@ module.exports = {
         ],
         "new-parens": error,
         "newline-after-var": off,
-        "newline-before-return": error,
         "newline-per-chained-call": off,
         "no-alert": error,
         "no-array-constructor": error,
