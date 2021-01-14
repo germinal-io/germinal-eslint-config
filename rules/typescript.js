@@ -83,11 +83,11 @@ module.exports = {
             "@typescript-eslint/no-empty-function":
                 baseRules["no-empty-function"],
             "@typescript-eslint/no-empty-interface": error,
-            "@typescript-eslint/no-explicit-any": off, // if any is explicit then it's wanted
+            "@typescript-eslint/no-explicit-any": warn, // if any is explicit then it's wanted
             "@typescript-eslint/no-inferrable-types": error,
             "@typescript-eslint/no-misused-new": error,
-            "@typescript-eslint/no-namespace": off, // We don't agree with community, namespaces are great and not deprecated
-            "@typescript-eslint/no-non-null-assertion": warn,
+            "@typescript-eslint/no-namespace": warn, // We don't agree with community, namespaces are great and not deprecated
+            "@typescript-eslint/no-non-null-assertion": error,
             "@typescript-eslint/no-shadow": baseRules["no-shadow"],
             "@typescript-eslint/no-this-alias": error,
             "@typescript-eslint/no-unused-vars": baseRules["no-unused-vars"],
