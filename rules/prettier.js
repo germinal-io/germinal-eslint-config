@@ -9,7 +9,7 @@ module.exports = {
                 semi: false,
                 singleQuote: true,
                 trailingComma: "es5",
-                tabWidth: 4,
+                tabWidth: 2,
             },
         ],
         "import/order": off,
