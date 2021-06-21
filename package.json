@@ -20,16 +20,9 @@
     "scripts": {
         "format": "eslint . --ext .js --fix",
         "lint": "eslint . --ext .js",
+        "setup": "husky install",
         "upgrade:deps": "ncu -u",
         "validate": "yarn lint"
-    },
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-            "pre-push": "yarn validate",
-            "post-rewrite": "yarn install",
-            "post-merge": "yarn install"
-        }
     },
     "commitlint": {
         "extends": [
