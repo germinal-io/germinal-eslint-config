@@ -3,6 +3,8 @@ const { off, warn, error } = require("./_rule");
 module.exports = {
   plugins: ["react", "react-hooks"],
   rules: {
+    "react-hooks/exhaustive-deps": warn,
+    "react-hooks/rules-of-hooks": error,
     "react/boolean-prop-naming": off,
     "react/button-has-type": error,
     "react/default-props-match-prop-types": off,
@@ -52,8 +54,8 @@ module.exports = {
       "error",
       {
         allowArrowFunctions: true,
-        allowFunctions: true,
         allowBind: false,
+        allowFunctions: true,
         ignoreRefs: true,
       },
     ],
@@ -173,7 +175,5 @@ module.exports = {
     "react/static-property-placement": error,
     "react/style-prop-object": error,
     "react/void-dom-elements-no-children": error,
-    "react-hooks/rules-of-hooks": error,
-    "react-hooks/exhaustive-deps": warn,
   },
 };

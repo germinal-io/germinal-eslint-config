@@ -1,18 +1,19 @@
 {
-    "$schema": "http://json.schemastore.org/eslintrc",
-    "root": true,
-    "extends": [
-        "eslint:recommended",
-        "plugin:node/recommended",
-        "plugin:prettier/recommended"
-    ],
-    "plugins": [
-        "sort-keys-fix"
-    ],
-    "env": {
-        "node": true
-    },
-    "rules": {
-        "@typescript-eslint/no-var-requires": "off"
-    }
+  "$schema": "http://json.schemastore.org/eslintrc",
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "sort-keys-fix"
+  ],
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "@typescript-eslint/no-var-requires": "off",
+    "sort-keys-fix/sort-keys-fix": "error"
+  }
 }

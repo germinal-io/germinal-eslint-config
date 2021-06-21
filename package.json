@@ -1,72 +1,73 @@
 {
-    "$schema": "http://json.schemastore.org/package",
-    "name": "@germinal-io/eslint-config",
-    "version": "1.3.0",
-    "description": "ESLint configuration presets",
-    "keywords": [
-        "eslint"
-    ],
-    "main": "index.js",
-    "repository": "git@github.com:germinal-io/germinal-eslint-config.git",
-    "author": "Lucien Boudy <luboudy@gmail.com>",
-    "license": "MIT",
-    "files": [
-        "*.js",
-        "rules/*.js"
-    ],
-    "publishConfig": {
-        "access": "public"
-    },
-    "scripts": {
-        "format": "eslint . --ext .js --fix",
-        "lint": "eslint . --ext .js",
-        "setup": "husky install",
-        "upgrade:deps": "ncu -u",
-        "validate": "yarn lint"
-    },
-    "commitlint": {
-        "extends": [
-            "@commitlint/config-conventional"
-        ]
-    },
-    "dependencies": {
-        "@typescript-eslint/eslint-plugin": "4.27.0",
-        "eslint-config-prettier": "8.3.0",
-        "eslint-plugin-filenames": "1.3.2",
-        "eslint-plugin-import": "2.23.4",
-        "eslint-plugin-jest": "24.3.6",
-        "eslint-plugin-jsdoc": "35.3.2",
-        "eslint-plugin-json-format": "2.0.1",
-        "eslint-plugin-prettier": "3.4.0",
-        "eslint-plugin-promise": "5.1.0",
-        "eslint-plugin-react": "7.24.0",
-        "eslint-plugin-react-hooks": "4.2.0",
-        "eslint-plugin-unicorn": "33.0.1",
-        "prettier-plugin-organize-imports": "2.1.0"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^12.1.4",
-        "@commitlint/config-conventional": "^12.1.4",
-        "@types/eslint": "^7.2.13",
-        "@types/eslint-plugin-prettier": "^3.1.0",
-        "@types/prettier": "^2.3.0",
-        "@types/react": "^17.0.11",
-        "@typescript-eslint/parser": "^4.13.0",
-        "babel-eslint": "^10.1.0",
-        "eslint": "^7.17.0",
-        "eslint-index": "^1.5.0",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-sort-keys-fix": "^1.1.1",
-        "husky": "^6.0.0",
-        "npm-check-updates": "^11.7.1",
-        "prettier": "^2.2.1",
-        "react": "^17.0.2",
-        "typescript": "^4.3.4"
-    },
-    "peerDependencies": {
-        "@typescript-eslint/parser": "4.x",
-        "babel-eslint": "10.x",
-        "eslint": "7.x",
-        "prettier": "2.x"
-    }
+  "$schema": "http://json.schemastore.org/package",
+  "name": "@germinal-io/eslint-config",
+  "version": "1.3.0",
+  "description": "ESLint configuration presets",
+  "keywords": [
+    "eslint"
+  ],
+  "main": "index.js",
+  "repository": "git@github.com:germinal-io/germinal-eslint-config.git",
+  "author": "Lucien Boudy <luboudy@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "*.js",
+    "rules/*.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "format": "eslint . --ext .js --fix",
+    "lint": "eslint . --ext .js",
+    "setup": "husky install",
+    "test": "eslint __tests__/**/* --ext .ts,.tsx,.js,.json",
+    "upgrade:deps": "ncu -u",
+    "validate": "yarn lint && yarn test"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "4.27.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-filenames": "1.3.2",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-jest": "24.3.6",
+    "eslint-plugin-jsdoc": "35.3.2",
+    "eslint-plugin-json-format": "2.0.1",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-promise": "5.1.0",
+    "eslint-plugin-react": "7.24.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-plugin-unicorn": "33.0.1",
+    "prettier-plugin-organize-imports": "2.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/eslint": "^7.2.13",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/prettier": "^2.3.0",
+    "@types/react": "^17.0.11",
+    "@typescript-eslint/parser": "^4.13.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.17.0",
+    "eslint-index": "^1.5.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "husky": "^6.0.0",
+    "npm-check-updates": "^11.7.1",
+    "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "typescript": "^4.3.4"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/parser": "4.x",
+    "babel-eslint": "10.x",
+    "eslint": "7.x",
+    "prettier": "2.x"
+  }
 }
