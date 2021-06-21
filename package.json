@@ -7,7 +7,7 @@
         "eslint"
     ],
     "main": "index.js",
-    "repository": "git@gitlab.com:germinal/germinal-eslint-config.git",
+    "repository": "git@github.com:germinal-io/germinal-eslint-config.git",
     "author": "Lucien Boudy <luboudy@gmail.com>",
     "license": "MIT",
     "files": [
