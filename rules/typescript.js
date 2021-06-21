@@ -74,7 +74,12 @@ module.exports = {
           selector: "variable",
           trailingUnderscore: "allow",
         },
-
+        {
+          format: ["PascalCase", "camelCase", "UPPER_CASE"],
+          leadingUnderscore: "allowSingleOrDouble",
+          selector: "memberLike",
+          trailingUnderscore: "allowDouble",
+        },
         {
           format: ["PascalCase"],
           selector: "typeLike",
