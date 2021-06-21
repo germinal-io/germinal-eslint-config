@@ -1,31 +1,43 @@
 {
-    "files.trimTrailingWhitespace": true,
-    "files.eol": "\n",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 4,
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
-    "javascript.validate.enable": true,
-    "javascript.implicitProjectConfig.checkJs": true,
-    "eslint.packageManager": "yarn",
-    "eslint.validate": [
-        "javascript",
-    ],
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    },
-    "git.autofetch": true,
-    "git.autoStash": true,
-    "git.fetchOnPull": true,
-    "git.rebaseWhenSync": true,
-    "cSpell.language": "en",
-    "cSpell.allowCompoundWords": true,
-    "cSpell.ignorePaths": [
-        "**/package.json",
-        "**/node_modules/**",
-        "**/.git/**",
-        ".vscode"
-    ],
-    "cSpell.words": []
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false,
+  },
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "git.autofetch": true,
+  "git.autoStash": true,
+  "git.fetchOnPull": true,
+  "git.rebaseWhenSync": true,
+  "cSpell.language": "en",
+  "cSpell.allowCompoundWords": true,
+  "cSpell.ignorePaths": [
+    "**/package.json",
+    "**/node_modules/**",
+    "**/.git/**",
+    ".vscode"
+  ],
+  "cSpell.words": []
 }
