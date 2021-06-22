@@ -1,5 +1,97 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
+  ],
+  "enabled": true,
+  "masterIssue": true,
+  "dependencyDashboard": true,
+  "assignAutomerge": true,
+  "ignoreUnstable": true,
+  "prCreation": "immediate",
+  "prConcurrentLimit": 10,
+  "prHourlyLimit": 0,
+  "rebaseWhen": "behind-base-branch",
+  "rangeStrategy": "auto",
+  "semanticCommits": "enabled",
+  "separateMajorMinor": true,
+  "separateMinorPatch": true,
+  "updateNotScheduled": true,
+  "schedule": [
+    "after 10pm every weekday",
+    "before 5am every weekday",
+    "every weekend"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "recreateClosed": true,
+    "rebaseStalePrs": true,
+    "branchTopic": "lock-file-maintenance",
+    "commitMessageAction": "Lock file maintenance",
+    "prPriority": 1,
+    "prBodyDefinitions": {
+      "Change": "All locks refreshed"
+    },
+    "schedule": [
+      "before 7am on monday"
+    ],
+    "labels": [
+      "AUTOMERGE"
+    ],
+    "automerge": true
+  },
+  "timezone": "Europe/Paris",
+  "assignees": [
+    "Zanzas",
+    "Hatscat"
+  ],
+  "assigneesSampleSize": 1,
+  "packageRules": [
+    {
+      "depTypeList": [
+        "devDependencies"
+      ],
+      "updateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "labels": [
+        "AUTOMERGE"
+      ],
+      "automerge": true
+    },
+    {
+      "depTypeList": [
+        "dependencies"
+      ],
+      "updateTypes": [
+        "major"
+      ],
+      "stabilityDays": 7
+    },
+    {
+      "depTypeList": [
+        "dependencies"
+      ],
+      "updateTypes": [
+        "minor"
+      ],
+      "stabilityDays": 2
+    },
+    {
+      "depTypeList": [
+        "dependencies"
+      ],
+      "updateTypes": [
+        "patch"
+      ],
+      "stabilityDays": 2,
+      "labels": [
+        "AUTOMERGE"
+      ],
+      "automerge": true
+    }
   ]
 }
