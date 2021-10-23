@@ -42,7 +42,7 @@
     "eslint-plugin-promise": "5.1.1",
     "eslint-plugin-react": "7.24.0",
     "eslint-plugin-react-hooks": "4.2.0",
-    "eslint-plugin-unicorn": "35.0.0",
+    "eslint-plugin-unicorn": "37.0.1",
     "prettier-plugin-organize-imports": "2.3.4"
   },
   "devDependencies": {
