@@ -50,7 +50,7 @@
     "@commitlint/config-conventional": "13.2.0",
     "@types/eslint": "7.28.2",
     "@types/eslint-plugin-prettier": "3.1.0",
-    "@types/prettier": "2.4.1",
+    "@types/prettier": "2.4.4",
     "@types/react": "17.0.34",
     "@typescript-eslint/parser": "4.29.3",
     "babel-eslint": "10.1.0",
