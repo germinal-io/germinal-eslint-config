@@ -53,7 +53,7 @@
     "@types/prettier": "2.7.3",
     "@types/react": "17.0.83",
     "@typescript-eslint/parser": "4.29.3",
-    "babel-eslint": "10.1.0",
+    "@babel/eslint-parser": "7.11.0",
     "eslint": "7.32.0",
     "eslint-index": "1.5.0",
     "eslint-plugin-node": "11.1.0",
@@ -66,7 +66,7 @@
   },
   "peerDependencies": {
     "@typescript-eslint/parser": "4.x",
-    "babel-eslint": "10.x",
+    "@babel/eslint-parser": "10.x || 7.x",
     "eslint": "7.x",
     "prettier": "2.x"
   }
